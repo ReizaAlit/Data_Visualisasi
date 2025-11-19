@@ -50,12 +50,14 @@ st.write("Menentukan **karakteristik lagu** yang paling diminati pengguna Spotif
 total_songs = df.shape[0]
 total_artists = df["artist(s)_name"].nunique()
 total_streams = df["streams"].sum()
+total_columns = df.shape[1]
 
 st.subheader("Data After Cleaning")
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 col1.metric("Total Songs", f"{total_songs}")
 col2.metric("Unique Artists", f"{total_artists}")
 col3.metric("Total Streams", f"{total_streams:,}")
+col4.metric("Total Columns", f"{total_columns}")
 
 st.markdown("---")
 
