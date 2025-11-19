@@ -30,8 +30,8 @@ st.session_state["df"] = df
 st.markdown("<h1 style='text-align: center; color: #1DB954;'>📊 Spotify 2023 - Analytics Dashboard</h1>", unsafe_allow_html=True)
 st.markdown("---")
 
-with st.expander("ℹ️ Tentang Dataset", expanded=True):
-    st.markdown("""
+st.subheader("ℹ️ Tentang Dataset")
+st.markdown("""
     Dataset yang digunakan adalah **“Most Streamed Spotify Songs 2023”** dari Kaggle.  
     Dataset ini disusun oleh Nidula Elgiriyewithana melalui web scraping dari API Spotify dan situs resmi lagu.  
 
