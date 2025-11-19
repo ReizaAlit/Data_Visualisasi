@@ -184,7 +184,7 @@ fig.update_layout(
 st.plotly_chart(fig, use_container_width=True)
 
 #BPM Distribution
-st.title("🎧 Distribusi BPM Setiap Subset Lagu")
+st.title("🎧 Distribution of BPM for Each Subset")
 
 fig = go.Figure()
 
@@ -237,7 +237,7 @@ fig.add_trace(go.Scatter(
 ))
 
 fig.update_layout(
-    title="Distribution of BPM for Each Subset (Interactive)",
+    title="Distribution of BPM for Each Subset",
     xaxis_title="Subset of Songs",
     yaxis_title="BPM",
     xaxis=dict(tickmode='array', tickvals=labels),
